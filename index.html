@@ -22,31 +22,43 @@
             </p>
             <p>You know you want to.</p>
         </div>
+        <h2>Let's do this!</h2>
         <div class="form">
-            <h3>Let's do this!</h3>
-            <form action="" method="get">
-                <div class="form-body">
-                <label for="first-name">First Name</label>
-                <input type="text" name="first-name">
-                <label for="last-name">Last Name</label>
-                <input type="text" name="last-name" id="">
+            <form action="" method="get" id="form-1">
+                <div class="inputs">
+                    <label for="first-name">First Name</label>
+                    <input type="text" name="first-name" id="first-name" placeholder="John">
                 </div>
-                <div class="form-body">
-                <label for="first-name">First Name</label>
-                <input type="text" name="first-name">
-                <label for="last-name">Last Name</label>
-                <input type="text" name="last-name" id="">
+
+                <div class="inputs">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" name="last-name" id="last-name" placeholder="Doe">
                 </div>
-                <div class="form-body">
-                <label for="first-name">First Name</label>
-                <input type="text" name="first-name">
-                <label for="last-name">Last Name</label>
-                <input type="text" name="last-name" id="">
+
+                <div class="inputs">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="you@email.com" required>
+                </div>
+
+                <div class="inputs">
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="text" name="phoneNumber" id="phoneNumber" pattern="^(\+?[01])?[-.\s]?\(?[1-9]\d{2}\)?[-.\s]?\d{3}[-.\s]?\d{4}" title="Example: (123)456-3421" placeholder="(123) 456-3421" required>
+                </div>
+
+                <div class="inputs">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+
+                <div class="inputs">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" name="confirmPassword" id="confirmPassword" required>
                 </div>
             </form>
         </div>
+
         <div class="footer">
-            <button type="submit">Create Account</button>
+            <button type="submit" form="form-1">Create Account</button>
             <p>Already have account? <a href="#">Login</a></p>
         </div>
     </div>
